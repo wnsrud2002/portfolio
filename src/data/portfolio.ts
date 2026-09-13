@@ -41,28 +41,10 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Project One",
+    title: "Fitness-Health (APTAMS)",
     description:
-      "A short, punchy description of what this project does, who it's for, and the problem it solves.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
-    liveUrl: "#",
-    repoUrl: "#",
-  },
-  {
-    title: "Project Two",
-    description:
-      "Another highlight project. Explain the impact — faster load times, more users, a hard bug solved.",
-    tags: ["React", "Node.js", "PostgreSQL"],
-    liveUrl: "#",
-    repoUrl: "#",
-  },
-  {
-    title: "Project Three",
-    description:
-      "A side project or open-source contribution that shows range beyond your day job.",
-    tags: ["Python", "Automation"],
-    liveUrl: "#",
-    repoUrl: "#",
+      "2nd Prize at the 2026 SZU International Summer Camp (SZUxSITxDAU, Team 8). A physical fitness assessment and monitoring system for university students — SHAP-based feature recognition checked against the national scoring rules, plus an LLM agent that gives traceable training guidance.",
+    tags: ["Python", "FastAPI", "React", "TypeScript", "SHAP", "LLM"],
   },
 ];
 
@@ -80,5 +62,27 @@ export const experience: ExperienceItem[] = [
     period: "2021 — Present",
     description:
       "Undergraduate coursework in artificial intelligence, covering machine learning, deep learning, and core computer science fundamentals.",
+  },
+];
+
+export type Award = {
+  title: string;
+  issuer: string;
+  date: string;
+  description?: string;
+};
+
+export const awards: Award[] = [
+  {
+    title: "2nd Prize · Team 8",
+    issuer: "2026 SZU International Summer Camp",
+    date: "Aug 10 — 22, 2026",
+    description:
+      "Received the Certificate of Achievement as a member of Team 8 (SZUxSITxDAU), placing 2nd with the Fitness-Health project — a fitness assessment and monitoring system for university students.",
+  },
+  {
+    title: "Top Excellence Award",
+    issuer: "2025 Dong-A Hackathon",
+    date: "Nov 13 — 14, 2025",
   },
 ];

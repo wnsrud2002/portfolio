@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Container } from "./container";
 import { SectionHeading } from "./section-heading";
-import { experience, skills } from "@/data/portfolio";
+import { awards, experience, skills } from "@/data/portfolio";
 
 export function Experience() {
   return (
@@ -36,6 +36,37 @@ export function Experience() {
                 <p className="mt-2 max-w-2xl text-sm leading-relaxed text-foreground/70">
                   {entry.description}
                 </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        <p className="mt-16 mb-6 font-mono text-sm text-foreground/50">Awards</p>
+        <div className="relative">
+          <div className="absolute top-0 bottom-0 left-[7px] w-px bg-border sm:left-[9px]" />
+
+          <div className="flex flex-col gap-10">
+            {awards.map((award, index) => (
+              <motion.div
+                key={`${award.title}-${award.issuer}`}
+                initial={{ opacity: 0, x: -16 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.08 }}
+                className="relative pl-8 sm:pl-10"
+              >
+                <span className="absolute top-1.5 left-0 h-3.5 w-3.5 rounded-full border-2 border-accent bg-background sm:h-4.5 sm:w-4.5" />
+
+                <p className="font-mono text-xs text-accent">{award.date}</p>
+                <h3 className="mt-1 text-lg font-semibold text-foreground">
+                  {award.title}{" "}
+                  <span className="text-foreground/50">· {award.issuer}</span>
+                </h3>
+                {award.description && (
+                  <p className="mt-2 max-w-2xl text-sm leading-relaxed text-foreground/70">
+                    {award.description}
+                  </p>
+                )}
               </motion.div>
             ))}
           </div>
