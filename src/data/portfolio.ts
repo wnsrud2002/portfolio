@@ -12,7 +12,7 @@ export const profile = {
   avatarUrl: "",
   resumeUrl: "#",
   social: {
-    github: "https://github.com/yourusername",
+    github: "https://github.com/wnsrud2002",
     linkedin: "https://linkedin.com/in/yourusername",
     instagram: "https://instagram.com/jun._.rud",
   },
