@@ -81,8 +81,8 @@ export const awards: Award[] = [
       "Received the Certificate of Achievement as a member of Team 8 (SZUxSITxDAU), placing 2nd with the Fitness-Health project — a fitness assessment and monitoring system for university students.",
   },
   {
-    title: "Top Excellence Award",
-    issuer: "2025 Dong-A Hackathon",
+    title: "최우수상",
+    issuer: "2025 동아해커톤",
     date: "Nov 13 — 14, 2025",
   },
 ];
